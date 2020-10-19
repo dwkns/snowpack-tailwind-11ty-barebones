@@ -1,0 +1,31 @@
+{
+  "mount": {
+    "build": "/",
+    "src/scripts": "/"
+  },
+  "plugins": [
+    [
+      "@snowpack/plugin-run-script",
+      {
+        "cmd": "postcss src/styles/index.css -o build/styles.css",
+        "watch": "postcss src/styles/index.css -o build/styles.css -w"
+      }
+    ],
+    [
+      "@snowpack/plugin-run-script", {
+        "cmd": "eleventy", "watch": "$1 --watch"
+      }
+    ],
+    [
+      "@snowpack/plugin-optimize", {
+        "preloadModules": true,
+        "target": "es2020"
+      }
+    ]
+  ],
+  "devOptions": { 
+    "out": "dist",
+    "hmrDelay": 300
+  }
+}
+

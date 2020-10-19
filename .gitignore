@@ -1,0 +1,7 @@
+node_modules
+node_modules.nosync/
+.vscode/
+web_modules
+build
+.build
+dist

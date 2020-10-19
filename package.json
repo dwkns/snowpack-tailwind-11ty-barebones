@@ -1,0 +1,29 @@
+{
+  "name": "snowpack-tailwind-11ty-barebones",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf build && rimraf dist",
+    "start": "run-s clean start:*",
+    "start:snowpack": "snowpack dev --open none",
+    "build": "run-s clean build:*",
+    "build:snowpack": "snowpack build",
+    "serve": "serve dist/"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@snowpack/plugin-build-script": "^2.0.10",
+    "@snowpack/plugin-optimize": "^0.2.5",
+    "@snowpack/plugin-run-script": "^2.1.6",
+    "autoprefixer": "^10.0.1",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.2",
+    "postcss": "^8.1.2",
+    "postcss-cli": "^8.1.0",
+    "rimraf": "^3.0.2",
+    "serve": "^11.3.2",
+    "snowpack": "^2.14.3",
+    "tailwindcss": "^1.9.4"
+  }
+}
