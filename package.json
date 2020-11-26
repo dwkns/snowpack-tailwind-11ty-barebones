@@ -12,18 +12,19 @@
     "serve": "serve dist/"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.11.0",
-    "@snowpack/plugin-build-script": "^2.0.10",
-    "@snowpack/plugin-optimize": "^0.2.5",
-    "@snowpack/plugin-run-script": "^2.1.6",
-    "autoprefixer": "^10.0.1",
+    "@11ty/eleventy": "^0.11.1",
+    "@snowpack/plugin-build-script": "^2.0.11",
+    "@snowpack/plugin-optimize": "^0.2.9",
+    "@snowpack/plugin-run-script": "^2.2.0",
+    "autoprefixer": "^10.0.2",
     "npm-run-all": "^4.1.5",
     "nunjucks": "^3.2.2",
-    "postcss": "^8.1.2",
-    "postcss-cli": "^8.1.0",
+    "postcss": "^8.1.10",
+    "postcss-cli": "^8.3.0",
     "rimraf": "^3.0.2",
     "serve": "^11.3.2",
-    "snowpack": "^2.14.3",
-    "tailwindcss": "^1.9.4"
+    "snowpack": "^2.17.1",
+    "tailwindcss": "^2.0.1",
+    "tailwindcss-debug-screens": "^2.0.0"
   }
 }
